@@ -85,13 +85,14 @@ h6 {
 
 /* End Reset */
 body {
-	background-color: #e8e8e8;
+	background: #e8e8e8 url('../img/Ellipse.png') 55% 106px no-repeat;
 }
 
 .content {
 	padding: 168px 0 137px 0;
 	max-width: 841px;
 	margin: 0 auto;
+	background: ;
 }
 
 .content-top {
@@ -151,7 +152,9 @@ body {
 
 .content-bottom-info {}
 
-.content-bottom-info-list {}
+.content-bottom-info-list {
+	margin-bottom: 59px;
+}
 
 .content-bottom-info-list li {
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -189,4 +192,21 @@ body {
 	opacity: 0.3;
 }
 
-.content-bottom-info__link {}
+.content-bottom-info__link {
+	height: 44px;
+	display: inline-block;
+	padding: 0 30px;
+	border-radius: 20px;
+	box-shadow: 0 6px 40px rgba(128, 183, 179, 0.54);
+	background-color: #80b7b3;
+	line-height: 44px;
+	color: #ffffff;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2.8px;
+}
+
+.content-bottom-info__link span {
+	background: url('../img/icons/arrow.png') right no-repeat;
+	padding-right: 30px;
+}
