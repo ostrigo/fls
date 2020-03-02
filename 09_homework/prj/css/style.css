@@ -92,7 +92,6 @@ body {
 	padding: 168px 0 137px 0;
 	max-width: 841px;
 	margin: 0 auto;
-	background: ;
 }
 
 .content-top {
@@ -149,9 +148,6 @@ body {
 	margin-bottom: 0;
 }
 
-
-.content-bottom-info {}
-
 .content-bottom-info-list {
 	margin-bottom: 59px;
 }
@@ -197,7 +193,7 @@ body {
 	display: inline-block;
 	padding: 0 30px;
 	border-radius: 20px;
-	box-shadow: 0 6px 40px rgba(128, 183, 179, 0.54);
+	box-shadow: 0 5px 1px rgba(0, 0, 0, 0.5);
 	background-color: #80b7b3;
 	line-height: 44px;
 	color: #ffffff;
@@ -209,4 +205,14 @@ body {
 .content-bottom-info__link span {
 	background: url('../img/icons/arrow.png') right no-repeat;
 	padding-right: 30px;
+}
+
+.content-bottom-info__link:hover {
+	background-color: #511e23;
+}
+
+.content-bottom-info__link:active {
+	position: relative;
+	top: 3px;
+	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
 }
