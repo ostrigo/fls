@@ -1,22 +1,18 @@
 {
-	"name": "gulp-frontend-template",
+	"name": "html-coding-primeone",
 	"version": "1.0.0",
-	"description": "gulp 4 + pug + scss template",
+	"description": "",
 	"main": "gulpfile.js",
 	"scripts": {
 		"start": "gulp start"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/ostrigo/gulp-frontend-template.git"
+		"url": "git+https://github.com/ostrigo/fls.git"
 	},
 	"keywords": [],
 	"author": "Oleg Strigo",
 	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/ostrigo/gulp-frontend-template/issues"
-	},
-	"homepage": "https://github.com/ostrigo/gulp-frontend-template#readme",
 	"devDependencies": {
 		"autoprefixer": "^9.7.6",
 		"browser-sync": "^2.26.7",
