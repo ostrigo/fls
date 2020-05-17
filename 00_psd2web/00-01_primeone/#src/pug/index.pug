@@ -24,7 +24,8 @@ html(lang="en")
 									li: a(href="#").header-bottom-menu__link Service info
 						.header-bottom__column
 							a(href="/").header-logo
-								span.header-logo__text Nyc's
+								span.header-logo__text Ny
+									span c's
 								span.header-logo__img
 									img(src="img/logo.png", alt="logo")
 								span.header-logo__text Catering
@@ -34,6 +35,16 @@ html(lang="en")
 									li: a(href="#").header-bottom-menu__link Gallery
 									li: a(href="#").header-bottom-menu__link Friends
 									li: a(href="#").header-bottom-menu__link Contact
-			.content
-				p Some content goes here.
+			.private
+				.private__column
+					.private__column.ibg
+						//- img(src="img/private_ibg.png", alt="private_ibg")
+				.private__column
+					.private-body
+						.private-body__title Private catering
+						.private-body__text Treat your guests to a beautifully plated dinner, hand-crafted canapes or a casual BBQ.
+						.private-body-links
+							a(href="#").private-body-links__btn Get a quote
+							a(href="#").private-body-links__link View menus
+			footer.footer
 		script(src="js/main.js")
