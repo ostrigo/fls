@@ -1,3 +1,14 @@
+/* Fonts */
+@font-face {
+	font-family: 'Bebas';
+	src: url('../fonts/Bebas-Regular.eot');
+	src: local('☺'), url('../fonts/Bebas-Regular.woff') format('woff'),
+		url('../fonts/Bebas-Regular.ttf') format('truetype'),
+		url('../fonts/Bebas-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* Start Reset */
 * {
 	padding: 0;
@@ -87,3 +98,110 @@ h6 {
 }
 
 /* End Reset */
+
+.wrap {
+	max-width: 868px;
+	height: 100%;
+	margin: 0 auto;
+}
+.header {
+	width: 100%;
+	padding-top: 34px;
+}
+.container {
+}
+.header-top {
+	display: flex;
+	justify-content: space-between;
+
+	// .header-top__link
+	&__link {
+		padding: 5px;
+		color: #000000;
+		font-family: 'Akzidenz Grotesk BQ - Bd Cnd';
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 25px;
+		text-transform: uppercase;
+		text-decoration: underline;
+	}
+}
+.header-top-lang {
+	// .header-top-lang__item
+	&__item {
+		display: inline-block;
+		padding: 5px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		color: #000000;
+		font-size: 15px;
+		line-height: 25px;
+		font-family: 'Bebas';
+
+		// .header-top-lang__item:hover
+		&:hover {
+			color: #ffffff;
+			background-color: #000000;
+		}
+	}
+}
+.active {
+	color: #ffffff;
+	background-color: #000000;
+}
+.header-bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: -30px;
+
+	// .header-bottom__column
+	&__column {
+	}
+}
+.header-bottom-menu {
+	// .header-bottom-menu__link
+	&__link {
+		color: #000000;
+		font-family: 'Akzidenz Grotesk BQ - Bd Cnd';
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 25px;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+	}
+}
+.header-bottom-menu-list {
+	li {
+		display: inline-block;
+		padding-right: 46px;
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+}
+.header-logo {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	text-align: center;
+
+	// .header-logo__text
+	&__text {
+		color: #000000;
+		font-family: 'Bebas';
+		font-size: 8px;
+		font-weight: 400;
+		line-height: 25px;
+		text-transform: uppercase;
+		letter-spacing: 8px;
+		letter-spacing: 2.72px;
+	}
+
+	// .header-logo__img
+	&__img {
+		padding: 17px 0;
+	}
+}
+.content {
+}

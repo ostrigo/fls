@@ -16,13 +16,14 @@ const path = {
 		mainJs: source_folder + '/js/main.js',
 		vendorJs: source_folder + '/js/vendor/*.js',
 		img: source_folder + '/img/**/*.{jpg,png,svg,gif,ico,webp}',
-		fonts: source_folder + '/fonts/*.ttf',
+		fonts: source_folder + '/fonts/*.{eot,otf,ttf,woff,svg}',
 	},
 	watch: {
 		html: source_folder + '/pug/**/*.pug',
 		css: source_folder + '/styles/**/*.scss',
 		js: source_folder + '/js/**/*.js',
 		img: source_folder + '/img/**/*.{jpg,png,svg,gif,ico,webp}',
+		fonts: source_folder + '/fonts/**/*.{eot,otf,ttf,woff,svg}',
 	},
 	clean: './' + dist_folder + '/',
 }

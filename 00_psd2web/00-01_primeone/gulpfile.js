@@ -83,6 +83,10 @@ function js() {
 		.pipe(bs.stream())
 }
 
+function fonts() {
+	return src(path.src.fonts).pipe(dest(path.build.fonts)).pipe(bs.stream())
+}
+
 function serve(cb) {
 	bs.init({
 		server: path.build.html,
@@ -95,6 +99,7 @@ function serve(cb) {
 	watch([path.watch.css], styles)
 	watch([path.watch.img], imageMinify)
 	watch([path.watch.js], js)
+	watch([path.watch.fonts], fonts)
 
 	return cb()
 }
@@ -105,9 +110,10 @@ module.exports.clean = clean
 module.exports.serve = serve
 module.exports.img = imageMinify
 module.exports.js = js
+module.exports.fonts = fonts
 
 // const dev = parallel(fonts)
-const dev = parallel(pug2html, styles, imageMinify, js)
+const dev = parallel(pug2html, styles, imageMinify, js, fonts)
 const build = series(clean, dev)
 
 module.exports.start = series(build, serve)
