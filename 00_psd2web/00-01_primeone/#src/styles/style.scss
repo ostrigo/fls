@@ -230,7 +230,7 @@ h6 {
 	}
 }
 .ibg {
-	background: no-repeat center/cover url('../img/private_ibg.png');
+	background: no-repeat center/cover url('../img/private_ibg.jpg');
 	height: 100%;
 }
 .private-body {
@@ -286,5 +286,94 @@ h6 {
 		text-transform: uppercase;
 		letter-spacing: 1.5px;
 		margin: 0 0 0 15px;
+	}
+}
+/* Products */
+.products {
+	max-width: 880px;
+	margin: 0 auto 75px auto;
+	display: flex;
+	justify-content: space-between;
+	// .products__column
+	&__column {
+	}
+}
+.card {
+	// .card__header
+	&__header {
+	}
+
+	// .card__figure
+	&__figure {
+	}
+
+	// .card__image
+	&__image {
+		width: 220px;
+		height: 100%;
+	}
+
+	// .card__body
+	&__body {
+		margin: 25px 0 0 0;
+	}
+
+	// .card__title
+	&__title {
+		width: 121px;
+		color: #000000;
+		font-family: 'Akzidenz Grotesk BQ - Bd Cnd';
+		font-size: 25px;
+		font-weight: 400;
+		line-height: 25px;
+		text-transform: uppercase;
+		letter-spacing: 2.5px;
+	}
+
+	// .card__text
+	&__text {
+		margin: 36px 0 0 0;
+		max-width: 185px;
+		color: #000000;
+		font-family: 'PT Sans';
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 25px;
+	}
+
+	// .card__footer
+	&__footer {
+		margin: 32px 0 0 0;
+	}
+}
+.card-actions {
+	// .card-actions__btn
+	&__btn {
+		display: inline-block;
+		color: #ffffff;
+		background-color: #000000;
+		font-family: 'Bebas';
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 25px;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+		height: 50px;
+		line-height: 50px;
+		padding: 0 33px;
+	}
+
+	// .card-actions__link
+	&__link {
+		display: block;
+		margin: 29px 0 0 0;
+		color: #000000;
+		font-family: Bebas;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 25px;
+		text-decoration: underline;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
 	}
 }

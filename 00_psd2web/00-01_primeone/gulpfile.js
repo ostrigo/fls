@@ -72,7 +72,7 @@ function imageMinify() {
 			)
 		)
 		.pipe(dest(path.build.img))
-		.pipe(bs.stream())
+		.pipe(bs.reload({ stream: true }))
 }
 
 function js() {
