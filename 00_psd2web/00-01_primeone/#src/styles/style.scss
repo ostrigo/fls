@@ -414,25 +414,41 @@ h6 {
 }
 
 .why-row-2 {
+	background-color: #ebebeb;
 	// .why-row-2__col
 	&__col {
 	}
 }
 .why-row-2-cards {
+	max-width: 880px;
+	margin: 0 auto;
+	padding: 50px 0;
+	display: flex;
 }
 .why-row-2-card {
+	display: flex;
 	// .why-row-2-card__img
-
 	&__img {
 	}
 
 	// .why-row-2-card__title
-
 	&__title {
+		color: #000000;
+		font-family: 'Akzidenz Grotesk BQ - Bd Cnd';
+		font-size: 25px;
+		font-weight: 400;
+		line-height: 25px;
+		text-transform: uppercase;
+		letter-spacing: 2.5px;
 	}
 
 	// .why-row-2-card__text
-
 	&__text {
+		/* Style for "Fresh, sea" */
+		color: #000000;
+		font-family: 'PT Sans';
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 25px;
 	}
 }
